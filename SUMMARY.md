@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* JavaScript核心
 * [词法文法](lexical_grammar.md)
 * [数据结构](data_structures.md)
 * [属性的可枚举性和所有权](enumerability_and_ownership_of_properties.md)
@@ -14,5 +15,4 @@
 * [函数](function.md)
 * [类](class.md)
 * [Web API](web_api.md)
-* JavaScript核心
 
