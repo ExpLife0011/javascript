@@ -7,5 +7,5 @@
 * [迭代器](iteration_protocols.md)
 * [严格模式](strict_mode.md)
 * [切换到严格模式](transitioning_to_strict_mode.md)
-* 模板字符串
+* [模板字符串](template_strings.md)
 
