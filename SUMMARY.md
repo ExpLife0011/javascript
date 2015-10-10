@@ -8,5 +8,5 @@
 * [严格模式](strict_mode.md)
 * [切换到严格模式](transitioning_to_strict_mode.md)
 * [模板字符串](template_strings.md)
-* 内置对象
+* [内置对象](built_in_object.md)
 
