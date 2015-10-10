@@ -9,6 +9,20 @@ JavaScript 是一种弱类型或者说动态语言。这意味着你不用提前
     var foo = 42;    // foo is a Number now
     var foo = "bar"; // foo is a String now
     var foo = true;  // foo is a Boolean now
+
+## 数据类型
+
+最新的 ECMAScript 标准定义了 7 种数据类型
+
+    6种原始类型
     
-
-
+        Boolean
+        Null
+        Undefined
+        Number
+        String
+        Symbol (new in ECMAScript 6)
+        
+    和 
+    
+        Object
