@@ -8,8 +8,8 @@
    * [数据结构](data_structures.md)
    * [严格模式](strict_mode.md)
    * [切换到严格模式](transitioning_to_strict_mode.md)
+   * [模板字符串](template_strings.md)
    * a
-* [模板字符串](template_strings.md)
 * [内置对象](built_in_object.md)
 * [表达式和运算符](expressions_and_operators.md)
 * [语句和声明](statement_and_declaration.md)
