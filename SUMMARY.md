@@ -13,7 +13,6 @@
    * [表达式和运算符](expressions_and_operators.md)
    * [语句和声明](statement_and_declaration.md)
    * [函数](function.md)
-   * [类](class.md)
    * a
 * [Web API](web_api.md)
 
