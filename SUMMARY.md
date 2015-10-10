@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* 教程
 * [JavaScript核心](core_javascript.md)
    * [词法文法](lexical_grammar.md)
    * [数据结构](data_structures.md)
@@ -16,5 +17,4 @@
    * [类](class.md)
 * [Web API](web_api.md)
 * [Node.js](nodejs.md)
-* 教程
 
