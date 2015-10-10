@@ -21,7 +21,7 @@ JavaScript 是一种弱类型或者说动态语言。这意味着你不用提前
         Undefined
         Number
         String
-        Symbol (new in ECMAScript 6)
+        Symbol (ECMAScript 6 新增)
         
     和 
     
