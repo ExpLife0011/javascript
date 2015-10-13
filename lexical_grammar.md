@@ -10,15 +10,7 @@
 
 ## 行终止符
 
-在 ECMAScript 中，以下 Unicode 字符可以作为行终止符
-
-| Code point | Name | Abbreviation | Description | Escape sequence |
-| -- | -- | -- | -- | -- |
-| U+000A | Line Feed | <LF> | New line character in UNIX systems. | \n |
-| U+000D | Carriage Return | <CR> | New line character in Commodore and early Mac systems. | \r |
-| U+2028 | Line Separator | <LS> |  |  |
-| U+2029 | Paragraph Separator | <PS> |  |  |
-
+比如`\n`、`\r`
 
 ## 注释
 
