@@ -55,7 +55,7 @@ JavaScript的字符串类型用于表示文本数据。它是一组16位的无�
 
 ### 符号类型
 
-符号类型在ECMAScript 第6版中被引入Javascript。
+符号类型在 ECMAScript 6 中被引入Javascript。符号类型是唯一的并且是不可修改的, 并且也可以用来作为Object的key的值。
 
 ## 对象
 
