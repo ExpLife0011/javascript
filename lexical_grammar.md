@@ -12,7 +12,14 @@
 
 空格、制表符和换行符被称为空白。
 
-![](2015-10-13T09-05-54.636Z.png)
+| Code point | Name | Abbreviation | Description | Escape sequence |
+| -- | -- | -- | -- | -- |
+| U+0009 | Character tabulation | <HT> | Horizontal tabulation | \t |
+| U+000B | Line tabulation | <VT> | Vertical tabulation | \v |
+| U+000C | Form feed | <FF> | Page breaking control character. | \f |
+| U+0020 | Space | <SP> | Normal space |  |
+| U+00A0 | No-break space | <NBSP> | Normal space, but no point at which a line may break |  |
+| Others | Other Unicode space characters | <USP> |  |  |
 
 ---
 
