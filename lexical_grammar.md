@@ -10,7 +10,57 @@
 
 ## 关键词
 
+ECMAScript 6 保留的关键字
 
+    break
+    case
+    class
+    catch
+    const
+    continue
+    debugger
+    default
+    delete
+    do
+    else
+    export
+    extends
+    finally
+    for
+    function
+    if
+    import
+    in
+    instanceof
+    let
+    new
+    return
+    super
+    switch
+    this
+    throw
+    try
+    typeof
+    var
+    void
+    while
+    with
+    yield
+
+下面将来有可能成为关键字
+
+    enum
+    await
+
+在严格模式下，下面将来有可能成为关键字
+
+    implements
+    package
+    protected
+    static
+    interface
+    private
+    public
 
 ---
 
