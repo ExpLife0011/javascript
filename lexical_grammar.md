@@ -4,13 +4,11 @@
 
 控制字符没有可视化表示，但控制着文本的视觉显示。
 
----
 
 ## 空白
 
 空格、制表符和换行符被称为空白。
 
----
 
 ## 行终止符
 
@@ -23,7 +21,6 @@
 | U+2028 | Line Separator | <LS> |  |  |
 | U+2029 | Paragraph Separator | <PS> |  |  |
 
----
 
 ## 注释
 
@@ -36,8 +33,6 @@
     /*
      多个注释内容
     */
-
----
 
 ## 关键词
 
@@ -93,7 +88,6 @@ ECMAScript 6 保留的关键字
     private
     public
 
----
 
 ## 直接量
 
@@ -163,8 +157,6 @@ ECMAScript 6 保留的关键字
     
     tag `string text ${expression} string text`
 
----
-
 ## 分号自动插入
 
 JavaScript 使用分号`;`将语句分隔开，但是分号是可选的。如果省略分号，JavaScript 的处理规则是：
@@ -202,5 +194,4 @@ JavaScript会解析成：
 而不是：
 
     x++; y;
-
----
+    
