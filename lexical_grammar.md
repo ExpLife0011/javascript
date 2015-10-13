@@ -4,7 +4,13 @@
 
 ## White space
 
-## Line terminators
+## 行终止符
+
+在 ECMAScript 中，以下 Unicode 字符可以作为行终止符
+
+ 
+
+---
 
 ## 注释
 
