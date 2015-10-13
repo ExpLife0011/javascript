@@ -10,7 +10,53 @@
 
 ## Keywords
 
-## Literals
+## 直接量
+
+    // Null直接量
+    null
+    
+    // 布尔直接量
+    true
+    false
+    
+    // 数字直接量
+    
+    
+    
+    // 对象直接量
+    
+    var o = { a: "foo", b: "bar", c: 42 };
+    
+    // shorthand notation. New in ES6
+    var a = "foo", b = "bar", c = 42;
+    var o = {a, b, c};
+    // instead of
+    var o = { a: a, b: b, c: c };
+    
+    // 数组直接量
+    
+    [1954, 1974, 1990, 2014]
+    
+    // 字符串直接量
+    
+    'foo'
+    "bar"
+    
+    // 正则表达式直接量
+    
+    /ab+c/g
+    
+    // 模板直接量
+    `string text`
+    
+    `string text line 1
+     string text line 2`
+    
+    `string text ${expression} string text`
+    
+    tag `string text ${expression} string text`
+
+---
 
 ## 分号自动插入
 
