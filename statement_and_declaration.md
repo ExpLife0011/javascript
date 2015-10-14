@@ -119,10 +119,30 @@ var、let、const，参考http://www.javascript-zh.com/variable_const.html
 
 ### debugger
 
+调用任何一个可用的调试器，如果没有调试器可用，则该语句没有任何效果。
+
+    function potentiallyBuggyCode() {
+        debugger;
+        // do potentially buggy stuff to examine, step through, etc.
+    }
+
+当debugger被调用时, 执行暂停在 debugger 语句的位置。就像在脚本源代码中的断点一样。
+
 ### export
+
+ES6 新增。
 
 ### import
 
+ES6 新增。
+
 ### label
 
+标记语句（labeled statement）可以和 break 或 continue 语句一起使用。标记就是在一条语句前面加个可以引用的标识符（identifier）。
+
+    label :
+       statement
+
 ### with
+
+不推荐使用。
