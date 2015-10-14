@@ -18,5 +18,5 @@
    * [类](class.md)
 * [Web API](web_api.md)
 * [Node.js](nodejs.md)
-* DOM
+* [DOM](dom.md)
 
