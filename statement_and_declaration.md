@@ -91,6 +91,38 @@ var、let、const，参考http://www.javascript-zh.com/variable_const.html
 
 ## 函数和类
 
+在直接量中没有函数直接量和类直接量，原来在这里。
+
+### function
+
+### function*
+
+### return
+
+### class
+
 ## 循环
 
+### do...while
+
+### for
+
+### for each...in
+
+### for...in
+
+### for...of
+
+### while
+
 ## 其他
+
+### debugger
+
+### export
+
+### import
+
+### label
+
+### with
