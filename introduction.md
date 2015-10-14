@@ -10,6 +10,10 @@ JavaScript内置了一个对象的标准库，比如数组，日期，数学和�
 
 > 服务端的JavaScript则通过提供有关在服务器上运行JavaScript的对象来可扩展语言核心。例如：服务端版本直接支持应用和数据库通信，提供应用不同调用间的信息连续性，或者在服务器上执行文件操作。
 
+## JavaScript 与 ECMAScript 的关系
+
+ECMAScript 是规范，JavaScript 是其中的一种实现。
+
 ## 基础知识
 
 JavaScript 是大小写敏感的，使用 Unicode 字符集。
