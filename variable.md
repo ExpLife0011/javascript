@@ -20,7 +20,7 @@ JavaScript有三种声明
 
 声明一个只读命名常量。 
 
-用 var 或 let 声明时未赋初值的变量，值会被设定为undefined。
+声明时未赋初值的变量，值会被设定为undefined。
 
 ## 变量的域
 
