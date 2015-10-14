@@ -2,7 +2,6 @@
 
 * [关于](README.md)
 * [教程](tutorial.md)
-   * [注释](comments.md)
    * [变量](variable.md)
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
