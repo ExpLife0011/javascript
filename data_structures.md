@@ -31,17 +31,19 @@ JavaScript 是一种弱类型或者说动态语言。这意味着你不用提前
 
 除 Object 以外的所有类型都是不可变的（值本身无法被改变）。例如，与 C 语言不同，JavaScript 中字符串是不可变的（译注：如，JavaScript 中对字符串的操作一定返回了一个新字符串，原始字符串并没有被改变）。我们称这些类型的值为“原始值”。
 
+ JavaScript 是大小写敏感的，因此 true、false、null、undefined 区分大小写，只能是全小写。
+
 ### 布尔类型
 
-布尔表示一个逻辑实体，可以有两个值：true 和 false。
+布尔表示一个逻辑实体，可以有两个值：true 和 false。区分大小写。
 
 ### Null 类型
 
-Null 类型只有一个值： null。
+Null 类型只有一个值： null。区分大小写。
 
 ### Undefined 类型
 
-一个没有被赋值的变量会有个默认值 undefined。
+一个没有被赋值的变量会有个默认值 undefined。区分大小写。
 
 ### 数字类型
 
