@@ -107,11 +107,28 @@ var、let、const，参考http://www.javascript-zh.com/variable_const.html
 
 ### for
 
-### for each...in
-
 ### for...in
 
+以任意序迭代一个对象的可枚举属性。每个不同的属性，语句都会被执行一次。
+
+    for (variable in object) {
+      ...
+    }
+
 ### for...of
+
+ES6 新增。注意与 for...in 的区别
+
+    let arr = [ 3, 5, 7 ];
+    arr.foo = "hello";
+    
+    for (let i in arr) {
+       console.log(i); // logs "0", "1", "2", "foo"
+    }
+    
+    for (let i of arr) {
+       console.log(i); // logs "3", "5", "7"
+    }
 
 ### while
 
