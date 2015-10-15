@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* [ES6](es6.md)
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
    * [词法文法](lexical_grammar.md)
@@ -19,5 +20,4 @@
 * [Web API](web_api.md)
 * [Node.js](nodejs.md)
 * [DOM](dom.md)
-* [ES6](es6.md)
 
