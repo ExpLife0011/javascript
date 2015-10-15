@@ -4,7 +4,7 @@
 * [教程](tutorial.md)
 * [ES6](es6.md)
    * [let 和 const](let_const.md)
-   * 解构赋值
+   * [解构赋值](destructuring.md)
    * [模块](module.md)
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
