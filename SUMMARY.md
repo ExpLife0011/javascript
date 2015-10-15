@@ -19,5 +19,5 @@
 * [Web API](web_api.md)
 * [Node.js](nodejs.md)
 * [DOM](dom.md)
-* ES6
+* [ES6](es6.md)
 
