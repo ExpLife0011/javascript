@@ -113,11 +113,11 @@ ES6 支持多重加载，即所加载的模块中又加载其他模块。
 	import customName from './export-default'; // 不使用大括号
 	customName(); // 'foo'
 
-需要注意的是，这时import命令后面，不使用大括号。
+需要注意的是，这时`import`命令后面，不使用大括号。
 
-显然，一个模块只能有一个默认输出，因此`export deault`命令只能使用一次。所以，import 命令后面才不用加大括号，因为只可能对应一个方法。
+显然，一个模块只能有一个默认输出，因此`export deault`命令只能使用一次。所以，`import`命令后面才不用加大括号，因为只可能对应一个方法。
 
-如果想在一条 import 语句中，同时输入默认方法和其他变量，可以写成下面这样。
+如果想在一条`import`语句中，同时输入默认方法和其他变量，可以写成下面这样。
 
 	import customName, { otherMethod } from './export-default';
 
