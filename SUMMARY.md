@@ -4,6 +4,7 @@
 * [教程](tutorial.md)
 * [ES6](es6.md)
    * [模块](module.md)
+   * let 和 const
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
    * [词法文法](lexical_grammar.md)
