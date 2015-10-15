@@ -6,6 +6,7 @@
    * [let 和 const](let_const.md)
    * [解构赋值](destructuring.md)
    * [模块](module.md)
+   * 类
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
    * [词法文法](lexical_grammar.md)
