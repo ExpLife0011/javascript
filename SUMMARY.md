@@ -3,7 +3,7 @@
 * [关于](README.md)
 * [教程](tutorial.md)
 * [ES6](es6.md)
-   * let 和 const
+   * [let 和 const](let_const.md)
    * [模块](module.md)
 * [JavaScript核心](core_javascript.md)
    * [介绍](introduction.md)
