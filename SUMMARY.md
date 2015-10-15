@@ -3,7 +3,7 @@
 * [关于](README.md)
 * [教程](tutorial.md)
    * [操作DOM](dom.md)
-       * [获取元素](get_elementmd)
+       * [获取元素](get_element.md)
 * [ES6](es6.md)
    * [let 和 const](let_const.md)
    * [解构赋值](destructuring.md)
