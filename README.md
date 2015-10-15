@@ -1,3 +1,3 @@
 # JavaScript中文指南
 
-打造一本最权威的 JavaScript 中文指南。
+仅供本人参考查阅。
