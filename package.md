@@ -57,3 +57,7 @@ dependencies和devDependencies两项，分别指定了项目运行所依赖的�
 直接使用`npm install`命令，就会在当前目录中安装所需要的模块。
 
     npm install
+
+npm install默认会安装dependencies字段和devDependencies字段中的所有模块，如果使用production参数，可以只安装dependencies字段的模块。
+
+    $ npm install --production
