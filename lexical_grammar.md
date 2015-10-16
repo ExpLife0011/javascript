@@ -138,7 +138,7 @@ ECMAScript 6 保留的关键字
     
     /ab+c/g
     
-### 模板直接量
+### 模板直接量(ES6 新增)
 
     `string text`
     
