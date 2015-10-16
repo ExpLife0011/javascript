@@ -26,4 +26,5 @@
 * [Web API](web_api.md)
 * [Node.js](nodejs.md)
    * [安装与版本管理](node_install.md)
+   * 设置代理
 
