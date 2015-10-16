@@ -138,17 +138,6 @@ ECMAScript 6 保留的关键字
     
     /ab+c/g
     
-### 模板直接量(ES6 新增)
-
-    `string text`
-    
-    `string text line 1
-     string text line 2`
-    
-    `string text ${expression} string text`
-    
-    tag `string text ${expression} string text`
-
 ## 分号自动插入
 
 JavaScript 使用分号`;`将语句分隔开，但是分号是可选的。如果省略分号，JavaScript 的处理规则是：
