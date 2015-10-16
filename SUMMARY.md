@@ -18,4 +18,5 @@
    * [安装与版本管理](node_install.md)
    * [设置代理](proxy.md)
    * [REPL环境](repl.md)
+   * 异步
 
