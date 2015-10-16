@@ -7,12 +7,18 @@ Node程序由许多个模块组成，每个模块就是一个文件。Node模块
 如果想在多个文件分享变量，必须定义为global对象的属性。
 
     global.warning = true;
-    
-CommonJS规定，每个文件的对外接口是module.exports对象。这个对象的所有属性和方法，都可以被其他文件导入。
+
+## module
 
 每个模块内部，都有一个module对象，代表当前模块。
 
+## module.exports
+
+CommonJS规定，每个文件的对外接口是module.exports对象。这个对象的所有属性和方法，都可以被其他文件导入。
+
 module.exports属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取module.exports变量。
+
+## exports
 
 为了方便，Node为每个模块提供一个exports变量，指向module.exports。这等同在每个模块头部，有一行这样的命令。
 
@@ -24,11 +30,13 @@ var exports = module.exports;
 
 上面这样的写法是无效的，因为exports不再指向module.exports了。
 
+## require
+
 Node.js使用CommonJS模块规范，内置的require命令用于加载模块文件。
 
 require命令的基本功能是，读入并执行一个JavaScript文件，然后返回该模块的exports对象。如果没有发现指定模块，会报错。
 
-加载规则
+**加载规则**
 
 require命令用于加载文件，后缀名默认为.js。
 
