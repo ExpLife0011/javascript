@@ -24,4 +24,4 @@
 
 还有一些对象实际上是模块内部的局部变量，指向的对象根据模块不同而不同，但是所有模块都适用
 
-module, module.exports, exports等
+    module, module.exports, exports等
