@@ -38,7 +38,7 @@ require命令的基本功能是，读入并执行一个JavaScript文件，然后
 
 **加载规则**
 
-require命令用于加载文件，后缀名默认为.js。
+require命令用于加载文件，后缀名默认为`.js`。
 
     var foo = require('foo');
     //  等同于
@@ -60,4 +60,40 @@ require命令用于加载文件，后缀名默认为.js。
     /home/node_modules/bar.js
     /node_modules/bar.js
 
-require.main
+**目录的加载规则**
+
+通常，我们会把相关的文件会放在一个目录里面，便于组织。这时，最好为该目录设置一个入口文件，让require方法可以通过这个入口文件，加载整个目录。
+
+在目录中放置一个package.json文件，并且将入口文件写入main字段。下面是一个例子。
+
+    // package.json
+    { "name" : "some-library",
+      "main" : "./lib/some-library.js" }
+      
+require发现参数字符串指向一个目录以后，会自动查看该目录的package.json文件，然后加载main字段指定的入口文件。如果package.json文件没有main字段，或者根本就没有package.json文件，则会加载该目录下的index.js文件或index.node文件。
+
+**模块的缓存**
+
+第一次加载某个模块时，Node会缓存该模块。以后再加载该模块，就直接从缓存取出该模块的exports属性。
+
+    require('./example.js');
+    require('./example.js').message = "hello";
+    require('./example.js').message
+    // "hello"
+
+上面代码中，连续三次使用require命令，加载同一个模块。第二次加载的时候，为输出的对象添加了一个message属性。但是第三次加载的时候，这个message属性依然存在，这就证明require命令并没有重新加载模块文件，而是输出了缓存。
+
+如果想要多次执行某个模块，可以让该模块输出一个函数，然后每次require这个模块的时候，重新执行一下输出的函数。
+
+注意，缓存是根据绝对路径识别模块的，如果同样的模块名，但是保存在不同的路径，require命令还是会重新加载该模块。
+
+**require.main**
+
+require方法有一个main属性，可以用来判断模块是直接执行，还是被调用执行。
+
+直接执行的时候（node module.js），require.main属性指向模块本身。
+
+    require.main === module
+    // true
+    
+调用执行的时候（通过require加载该脚本执行），上面的表达式返回false。
