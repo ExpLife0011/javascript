@@ -2,8 +2,8 @@
 
 * [关于](README.md)
 * [教程](tutorial.md)
-   * [词法文法](lexical_grammar.md)
    * [介绍](introduction.md)
+   * [词法文法](lexical_grammar.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
