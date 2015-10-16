@@ -18,15 +18,15 @@
 
 ### getElementsByClassName 
 
-获取所有 class 同时包括 'red' 和 'test' 的元素.
+获取所有 class 同时包括 'red' 和 'test' 的元素
 
 	document.getElementsByClassName('red test');
 
 ### getElementsByName
 
-getElementsByName 有兼容性问题。在 IE & Opera 中，id 同名也会返回
+getElementsByName 有兼容性问题。在 IE & Opera 中，同名的 id 也会返回。
 
-如果元素不支持 name 也可以被返回
+如果元素不支持 name 也可以被返回。
 
 ### querySelector
 
