@@ -2,6 +2,7 @@
 
 * [关于](README.md)
 * [教程](tutorial.md)
+   * [词法文法](lexical_grammar.md)
    * [介绍](introduction.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
@@ -11,7 +12,6 @@
    * [类](class.md)
    * [模块](module.md)
 * [JavaScript核心](core_javascript.md)
-   * [词法文法](lexical_grammar.md)
    * [变量与常量](variable_const.md)
    * [数据结构](data_structures.md)
    * [语句和声明](statement_and_declaration.md)
