@@ -5,7 +5,13 @@
     node --version
     # 或者
     node -v
-    
+
+运行JavaScript脚本
+
+    node demo
+    // 或者
+    node demo.js
+
 可以通过 n 模块进行版本管理
 
     sudo npm install n -g
