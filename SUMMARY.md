@@ -22,5 +22,5 @@
    * [全局对象和全局变量](global.md)
    * [模块](commonjs.md)
    * [package.json](package.md)
-   * npm
+   * [npm](npm.md)
 
