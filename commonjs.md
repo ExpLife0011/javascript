@@ -16,13 +16,13 @@ Node程序由许多个模块组成，每个模块就是一个文件。Node模块
 
 CommonJS规定，每个文件的对外接口是module.exports对象。这个对象的所有属性和方法，都可以被其他文件导入。
 
-module.exports属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取module.exports变量。
+其他文件加载该模块，实际上就是读取module.exports变量。
 
 ## exports
 
 为了方便，Node为每个模块提供一个exports变量，指向module.exports。这等同在每个模块头部，有一行这样的命令。
 
-var exports = module.exports;
+    var exports = module.exports;
 
 注意，不能直接将exports变量指向一个值，因为这样等于切断了exports与module.exports的联系。
 
