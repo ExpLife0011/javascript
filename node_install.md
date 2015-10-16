@@ -12,6 +12,10 @@
     // 或者
     node demo.js
 
+在文件的第一行，如果加入了解释器的位置，就可以将其作为命令行工具直接调用
+
+    #!/usr/bin/env node
+
 可以通过 n 模块进行版本管理
 
     sudo npm install n -g
