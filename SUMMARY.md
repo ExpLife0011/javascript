@@ -19,4 +19,5 @@
    * [设置代理](proxy.md)
    * [REPL环境](repl.md)
    * [异步](async.md)
+   * 全局对象和全局变量
 
