@@ -7,7 +7,7 @@
    * [变量](variable.md)
    * [数据结构](data_structures.md)
    * [Boolean](boolean.md)
-   * Null 类型
+   * [Null 类型](null.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
