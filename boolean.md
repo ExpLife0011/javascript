@@ -15,3 +15,5 @@ Boolean对象是一个包装了布尔值的对象。
 不要将原始值true false 和值为true false的Boolean对象相混淆。
 
 任何值为 undefined 或者 null的对象，包括值为false的Boolean对象，在条件语句中,其值都将作为 true 来判断。
+
+在非构造器上下文中 (如：没有 new 操作符)，Boolean 能被用来执行类型转换。
