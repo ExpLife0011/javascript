@@ -26,4 +26,5 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
+* Number
 
