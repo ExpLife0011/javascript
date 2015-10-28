@@ -9,6 +9,7 @@
    * [Boolean](boolean.md)
    * [Null](null.md)
    * [Undefined](undefined.md)
+   * Number
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
@@ -26,5 +27,4 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
-* Number
 
