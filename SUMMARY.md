@@ -10,6 +10,7 @@
    * [Null](null.md)
    * [Undefined](undefined.md)
    * [Number](number.md)
+   * String
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
@@ -27,5 +28,4 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
-* String
 
