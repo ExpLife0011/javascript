@@ -14,7 +14,7 @@ JavaScript 内置了一个对象的标准库，比如数组、日期、数学和
 
 ECMAScript 是规范，JavaScript 是其中的一种实现。
 
-## 基础知识
+## 先念一段咒语
 
 JavaScript 是大小写敏感的，使用 Unicode 字符集。
 
