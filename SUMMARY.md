@@ -6,7 +6,7 @@
    * [词法文法](lexical_grammar.md)
    * [变量](variable.md)
    * [数据结构](data_structures.md)
-   * Boolean
+   * [Boolean](boolean.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
