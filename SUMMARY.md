@@ -10,7 +10,7 @@
    * [Null](null.md)
    * [Undefined](undefined.md)
    * [Number](number.md)
-   * String
+   * [String](string.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
