@@ -171,12 +171,12 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
     // 实例函数
     valueOf // 返回数组本身
     toString // 返回数组的字符串形式
-    push
-    pop
-    join
-    concat
-    shift
-    unshift
+    push // 在数组的末端添加一个或多个元素，并返回添加后的数组的长度。
+    pop // 用于删除数组的最后一个元素，并返回该元素。没有参数
+    join // 以参数作为分隔符，将所有数组成员组成一个字符串返回。如果不提供参数，默认用逗号分隔。
+    concat // 将新数组的成员，添加到原数组的尾部，然后返回一个新数组
+    shift // 删除数组的第一个元素，并返回该元素。没有参数
+    unshift // 在数组的第一个位置添加元素，并返回添加新元素后的数组长度。
     reverse
     slice
     splice
@@ -202,3 +202,19 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
     var a = [1,2,3,[4,5,6]];
     a.toString()
     // "1,2,3,4,5,6"
+
+### push
+
+    a.push("a") // 2
+    a.push(true, {}) // 4
+
+### concat
+
+    ['hello'].concat(['world'])
+    // ["hello", "world"]
+    
+    ['hello'].concat(['world'], ['!'])
+    // ["hello", "world", "!"]
+    
+    [1, 2, 3].concat(4, 5, 6)
+    // [1, 2, 3, 4, 5, 6]
