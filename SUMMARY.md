@@ -11,9 +11,9 @@
    * [Undefined](undefined.md)
    * [Number](number.md)
    * [String](string.md)
+   * 数组
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
-   * 数组
 * [ES6](es6.md)
    * [let 和 const](let_const.md)
    * [解构赋值](destructuring.md)
