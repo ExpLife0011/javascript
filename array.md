@@ -163,14 +163,14 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
 ## 数组函数
 
     // 构造函数
-    Array
+    Array // 生成新的数组。见上文
     
     // 静态函数
-    Array.isArray
+    Array.isArray // 判断是否是数组。有一个参数
     
     // 实例函数
-    valueOf
-    toString
+    valueOf // 返回数组本身
+    toString // 返回数组的字符串形式
     push
     pop
     join
@@ -192,3 +192,13 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
     reduceRight
     indexOf 
     lastIndexOf
+
+### valueOf 和 toString
+
+    var a = [1,2,3];
+    a.valueOf()
+    // [1,2,3]
+    
+    var a = [1,2,3,[4,5,6]];
+    a.toString()
+    // "1,2,3,4,5,6"
