@@ -147,7 +147,7 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
     console.log(arr.d); // d
     console.log(arr['d']); // d
 
-所有属性都会按出现的先后次序移到数字索引后面。
+使用`for in`时，先输出元素，再输出添加的属性。
 
     var arr = ['a', 'b'];
     arr['e'] = 'e';
