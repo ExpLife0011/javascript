@@ -8,6 +8,67 @@
 
 和其他语言不同，javascript不区分单引号和双引号字符串，所以不论是单引号还是双引号的字符串，转义字符都能运行。
 
+## 多行字符串
+
+字符串默认只能写在一行内，分成多行将会报错。
+
+    'a
+    b
+    c'
+    // SyntaxError: Unexpected token ILLEGAL
+
+如果长字符串必须分成多行，可以在每一行的尾部使用反斜杠。
+
+    var longString = "Long \
+    long \
+    long \
+    string";
+    
+    longString
+    // "Long long long string"
+
+但是，这种写法有两个注意点，首先，它是ECMAScript 5新添加的，老式浏览器（如IE 8）不支持，其次，反斜杠的后面必须是换行符，而不能有其他字符（比如空格），否则会报错。
+
+连接运算符（+）可以连接多个单行字符串，用来模拟多行字符串。
+
+    var longString = 'Long '
+      + 'long '
+      + 'long '
+      + 'string';
+
+## 字符串与数组
+
+字符串可以被视为字符数组，可以使用数组的方括号运算符，用来返回某个位置的字符，但无法改变字符串之中的单个字符。
+
+length属性返回字符串的长度，该属性也是无法改变的。
+
+字符串与数组的关系仅此而已。
+
+## 字符集
+
+JavaScript使用Unicode字符集，使用16位（即2个字节）的UTF-16格式储存。也就是说，JavaScript的单位字符长度固定为2个字节。
+
+对于U+0000到U+FFFF之间的字符，一个16位就够了（即2个字节）；对于U+10000到U+10FFFF之间的字符，就需要2个16位（即4个字节），而且前两个字节在0xD800到0xDBFF之间，后两个字节在0xDC00到0xDFFF之间。浏览器会正确将这四个字节识别为一个字符，但是JavaScript内部的字符长度总是固定为16位，会把这四个字节视为两个字符。
+
+    // 把字符串变成数组
+    function getSymbols(string) {
+        var length = string.length;
+        var index = -1;
+        var output = [];
+        var character;
+        var charCode;
+        while (++index < length) {
+            character = string.charAt(index);
+            charCode = character.charCodeAt(0);
+            if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+                output.push(character + string.charAt(++index));
+            } else {
+                output.push(character);
+            }
+        }
+        return output;
+    }
+
 ## 包装对象
 
     new String(thing)
