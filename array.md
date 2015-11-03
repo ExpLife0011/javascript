@@ -57,7 +57,7 @@
 
 ## 没有元素的情况
 
-没有元素不是指元素值为undefined，而是就是没有元素。访问时因没有元素而返回undefined。
+没有元素不是指元素值为undefined，而是此位置上没有任何元素。访问时因没有元素而返回undefined。
 
     // arr 和 arr2 完全等价
     var arr = [, , , ,];
@@ -70,7 +70,7 @@
 
 arr、arr2、arr3的长度相等。arr 和 arr2 完全等价，虽有长度，但位置上没有元素。arr3 有3个元素。
 
-使用`delete`命令，就会出现没有元素的情况。没有元素但是仍然有位置，所以`delete`命令不影响length属性。
+使用`delete`命令，就会出现位置上没有元素的情况。没有元素但是仍然有位置，所以`delete`命令不影响length属性。
 
 ## 数组元素的访问
 
@@ -149,3 +149,13 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
     console.log(arr.d); // d
     console.log(arr['d']); // d
 
+所有非数字索引的元素都会按出现的先后次序移到数字索引后面。
+
+    var arr = ['a', 'b'];
+    arr['e'] = 'e';
+    arr[2] = 'd';
+    arr['c'] = 'c';
+    arr[3] = 'f';
+    for (var i in arr) {
+      console.log(arr[i]); // a, b, d, f, e, c
+    }
