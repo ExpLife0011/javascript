@@ -42,11 +42,11 @@
     a.length // 0
     
     var a = new Array(1);
-    a // [undefined × 1]
+    a // []
     a.length // 1
     
     var a = new Array(2);
-    a // [undefined × 2]
+    a // []
     a.length // 2
     
     var a = new Array(1,2);
@@ -54,6 +54,21 @@
     a.length // 2
     
 没有参数时，返回一个空数组；使用一个参数时，返回一个指定长度的空数组；使用多个参数，返回一个指定成员的数组。所以，建议总是直接采用方括号创建数组。
+
+## 数组的空位
+
+数组的空位是指没有元素(不是undefined)
+
+    // arr 和 arr2 完全等价
+    var arr = [, , , ,];
+    var arr2 = new Array(3);
+
+与下面的不同
+    
+    // 有3个元素
+    var arr3 = [undefined, undefined, undefined];
+
+arr、arr2、arr3的长度相等。arr 和 arr2 完全等价，虽有长度，但没有元素。arr3 有3个元素。
 
 ## 数组的读取
 
@@ -76,8 +91,6 @@
     
     arr['0'] // 'a'
     arr[0] // 'a'
-
-## 数组的空位
 
 ## length 属性
 
