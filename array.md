@@ -42,11 +42,11 @@
     a.length // 0
     
     var a = new Array(1);
-    a // []
+    a // [,]
     a.length // 1
     
     var a = new Array(2);
-    a // []
+    a // [, ,]
     a.length // 2
     
     var a = new Array(1,2);
