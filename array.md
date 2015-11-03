@@ -160,31 +160,35 @@ length属性是可写的。如果人为设置一个小于当前成员个数的�
       console.log(arr[i]); // a, b, d, f, e, c
     }
     
-## 
+## 数组函数
 
-Array()
-
-Array.isArray
-
-valueOf
-toString
-push
-pop
-join
-concat
-shift
-unshift
-reverse
-slice
-splice
-sort
-
-map
-forEach
-filter
-some
-every
-reduce
-reduceRight
-indexOf 
-lastIndexOf
+    // 构造函数
+    Array
+    
+    // 静态函数
+    Array.isArray
+    
+    // 实例函数
+    valueOf
+    toString
+    push
+    pop
+    join
+    concat
+    shift
+    unshift
+    reverse
+    slice
+    splice
+    sort
+    
+    // ES5新增
+    map
+    forEach
+    filter
+    some
+    every
+    reduce
+    reduceRight
+    indexOf 
+    lastIndexOf
