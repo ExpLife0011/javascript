@@ -133,8 +133,29 @@ JavaScript使用Unicode字符集，使用16位（即2个字节）的UTF-16格式
 
 第二个参数对于slice和substring方法，表示子字符串的结束位置；对于substr，表示子字符串的长度。
 
-如果第一个参数大于第二个参数，slice和substring会自动调换参数位置。而slice方法并不会自动调换参数位置，而是返回一个空字符串。
+如果第一个参数大于第二个参数，substring会自动调换参数位置。而slice方法并不会自动调换参数位置，而是返回一个空字符串。
 
 如果参数为负，对于slice方法，表示字符位置从尾部开始计算。对于substring方法，会自动将负数转为0。对于substr方法，负数出现在第一个参数，表示从尾部开始计算的字符位置；负数出现在第二个参数，将被转为0。
 
-### 
+### indexOf()、lastIndexOf()
+
+返回一个字符串在另一个字符串中的位置。如果返回-1，就表示不匹配。
+
+还可以接受第二个参数，对于indexOf，表示从该位置开始向后匹配；对于lastIndexOf，表示从该位置起向前匹配。
+
+### trim()
+
+去除字符串两端的空格
+
+    "  hello world  ".trim(); // "hello world"
+    
+### toLowerCase()、toUpperCase()
+
+### localeCompare()
+
+比较两个字符串。它返回一个数字，如果小于0，表示第一个字符串小于第二个字符串；如果等于0，表示两者相等；如果大于0，表示第一个字符串大于第二个字符串。
+
+    'apple'.localeCompare('banana'); // -1
+    'apple'.localeCompare('apple'); // 0
+
+match()、search()、replace()、split()是与搜索和替换相关的有4个方法，它们都允许使用正则表达式。详情见正则表达式一节。
