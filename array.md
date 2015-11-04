@@ -72,6 +72,14 @@ arr、arr2、arr3的长度相等。arr 和 arr2 完全等价，虽有长度，�
 
 使用`delete`命令，就会出现位置上没有元素的情况。没有元素但是仍然有位置，所以`delete`命令不影响length属性。
 
+ES5对空位的处理，已经很不一致了，大多数情况下会忽略空位。
+
+* forEach(), filter(), every() 和some()都会跳过空位。
+* map()会跳过空位，但会保留这个值
+* join()和toString()会将空位视为undefined，而undefined和null会被处理成空字符串。
+
+ES6则是明确将空位转为undefined。
+
 ## 数组元素的访问
 
 对象有两种读取成员的方法：“点”结构（object.key）和方括号结构（object[key]）。但是，对于数字的键名，不能使用点结构，arr.0的写法不合法，因为单独的数字不能作为标识符（identifier）。如果给数组添加了属性，则可以用“点”访问属性。
