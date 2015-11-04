@@ -158,4 +158,6 @@ JavaScript使用Unicode字符集，使用16位（即2个字节）的UTF-16格式
     'apple'.localeCompare('banana'); // -1
     'apple'.localeCompare('apple'); // 0
 
+### match()、search()、replace()、split()
+
 match()、search()、replace()、split()是与搜索和替换相关的有4个方法，它们都允许使用正则表达式。详情见正则表达式一节。
