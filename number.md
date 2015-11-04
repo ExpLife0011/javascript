@@ -7,6 +7,85 @@ JavaScript内部，所有数字都是以64位浮点数形式储存，即使整�
     1 === 1.0 // true
     1 + 1.0 // 2
 
+64位浮点数格式的64个二进制位中，第0位到第51位储存有效数字部分，第52到第62位储存指数部分，第63位是符号位，0表示正数，1表示负数。
+
+以下两种情况，JavaScript会自动将数值转为科学计数法表示，其他情况都采用字面形式直接表示。
+
+（1）小数点前的数字多于21位。
+
+    1234567890123456789012
+    // 1.2345678901234568e+21
+    
+    123456789012345678901
+    // 123456789012345680000
+    
+（2）小数点后的零多于5个。
+
+    0.0000003 // 3e-7
+    0.000003 // 0.000003
+
+## NaN
+
+NaN是JavaScript的特殊值，表示“非数字”（Not a Number），主要出现在将字符串解析成数字出错的场合。
+
+0除以0也会得到NaN。
+
+NaN不是一种独立的数据类型，而是一种特殊数值，它的数据类型依然属于Number，使用typeof运算符可以看得很清楚。
+
+    typeof NaN // 'number'
+
+NaN不等于任何值，包括它本身。
+
+    NaN === NaN // false
+
+由于数组的indexOf方法，内部使用的是严格相等运算符，所以该方法对NaN不成立。
+
+    [NaN].indexOf(NaN) // -1
+
+isNaN方法可以用来判断一个值是否为NaN。
+
+    isNaN(NaN) // true
+    isNaN(123) // false
+
+isNaN只对数值有效，如果传入其他值，会被先转成数值。比如，传入字符串的时候，字符串会被先转成NaN，所以最后返回true，这一点要特别引起注意。也就是说，isNaN为true的值，有可能不是NaN，而是一个字符串。
+
+    isNaN("Hello") // true
+    // 相当于
+    isNaN(Number("Hello")) // true
+
+出于同样的原因，对于数组和对象，isNaN也返回true。
+
+    isNaN({}) // true
+    isNaN(Number({})) // true
+    
+    isNaN(["xzy"]) // true
+    isNaN(Number(["xzy"])) // true
+
+## Infinity
+
+Infinity表示“无穷”。除了0除以0得到NaN，其他任意数除以0，得到Infinity。
+
+    1 / -0 // -Infinity
+    1 / +0 // Infinity
+
+非0值除以0，JavaScript不报错，而是返回Infinity。
+
+运算结果超出JavaScript可接受范围，也会返回无穷。
+
+    Math.pow(2, 2048) // Infinity
+    -Math.pow(2, 2048) // -Infinity
+
+由于数值正向溢出（overflow）、负向溢出（underflow）和被0除，JavaScript都不报错，所以单纯的数学运算几乎没有可能抛出错误。
+
+## isFinite()
+
+返回一个布尔值，检查某个值是否为正常值，而不是Infinity或NaN。
+
+    isFinite(Infinity) // false
+    isFinite(-1) // true
+    isFinite(true) // true
+    isFinite(NaN) // false
+
 ## 包装对象
 
     new Number(value)
