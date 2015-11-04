@@ -117,3 +117,100 @@ JS不支持后瞻断言。
 `(?<=)x`
 
 `(?<!)x`
+
+## 属性和方法
+
+**ignoreCase**：返回一个布尔值，表示是否设置了i修饰符，该属性只读。
+
+**global**：返回一个布尔值，表示是否设置了g修饰符，该属性只读。
+
+**multiline**：返回一个布尔值，表示是否设置了m修饰符，该属性只读。
+
+	var r = /abc/igm;
+	
+	r.ignoreCase // true
+	r.global // true
+	r.multiline // true
+
+**lastIndex**：返回下一次开始搜索的位置。该属性可读写，但是只在设置了g修饰符时有意义。
+
+**source**：返回正则表达式的字符串形式（不包括反斜杠），该属性只读。
+
+	var r = /abc/igm;
+	
+	r.lastIndex // 0
+	r.source // "abc"
+
+**test()**
+
+正则对象的test方法返回一个布尔值，表示当前模式是否能匹配参数字符串。
+
+	/cat/.test('cats and dogs') // true
+
+如果正则表达式带有g修饰符，则每一次test方法都从上一次结束的位置开始向后匹配。
+
+	r.lastIndex // 0
+	r.test(s) // true
+	
+	r.lastIndex // 2
+	r.test(s) // true
+	
+	r.lastIndex // 4
+	r.test(s) // false
+
+带有g修饰符时，可以通过正则对象的lastIndex属性指定开始搜索的位置
+
+	var r = /x/g;
+	var s = '_x_x';
+	
+	r.lastIndex = 4;
+	r.test(s) // false
+
+**exec()**
+
+正则对象的exec方法，可以返回匹配结果。如果发现匹配，就返回一个数组，每个匹配成功的子字符串，就是数组成员，否则返回null。
+
+	var s = '_x_x';
+	var r1 = /x/;
+	var r2 = /y/;
+	
+	r1.exec(s) // ["x"]
+	r2.exec(s) // null
+
+如果正则表示式包含圆括号（即要求“组匹配”），则返回的数组会包括多个元素。其中，第一个元素是整个匹配成功的结果，后面的元素就是圆括号对应的匹配成功的组。也就是说，第二个元素对应第一个括号，第三个元素对应第二个括号，以此类推。
+
+exec方法的返回数组还包含以下两个属性：
+input：整个原字符串。
+index：整个模式匹配成功的开始位置（从0开始）。
+
+	var r = /a(b+)a/;
+	var arr = regex.exec("_abbba_aba_");
+	
+	arr // ["abbba", "bbb"]
+	
+	arr.index // 1
+	arr.input // "_abbba_aba_"
+
+如果正则表达式加上g修饰符，则可以使用多次exec方法，下一次搜索的位置从上一次匹配成功结束的位置开始。
+
+	var r = /a(b+)a/g;
+	
+	var a1 = r.exec("_abbba_aba_");
+	a1 // ["abbba", "bbb"]
+	a1.index // 1
+	r.lastIndex // 6
+	
+	var a2 = r.exec("_abbba_aba_");
+	a2 // ["aba", "b"]
+	a2.index // 7
+	r.lastIndex // 10
+	
+	var a3 = r.exec("_abbba_aba_");
+	a3 // null
+	a3.index // TypeError: Cannot read property 'index' of null
+	r.lastIndex // 0
+	
+	var a4 = r.exec("_abbba_aba_");
+	a4 // ["abbba", "bbb"]
+	a4.index // 1
+	r.lastIndex // 6
