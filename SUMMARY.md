@@ -12,6 +12,7 @@
    * [Number](number.md)
    * [String](string.md)
    * [数组](array.md)
+   * [正则表达式](regexp.md)
    * [操作DOM](dom.md)
        * [获取元素](get_element.md)
 * [ES6](es6.md)
@@ -29,5 +30,4 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
-* [正则表达式](regexp.md)
 
