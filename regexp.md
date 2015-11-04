@@ -2,7 +2,7 @@
 
 ## 定义
 
-**(1) 使用用字面量**
+**(1) 使用字面量**
 
     var regex = /xyz/;
     var regex = /xyz/i;
