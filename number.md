@@ -140,3 +140,17 @@ toExponential方法的参数表示小数点后有效数字的位数，范围为0
     
     (12.34).toPrecision(5)
     // "12.340"
+
+toPrecision方法用于四舍五入时不太可靠，可能跟浮点数不是精确储存有关。
+
+    (12.35).toPrecision(3)
+    // "12.3"
+    
+    (12.25).toPrecision(3)
+    // "12.3"
+    
+    (12.15).toPrecision(3)
+    // "12.2"
+    
+    (12.45).toPrecision(3)
+    // "12.4"
