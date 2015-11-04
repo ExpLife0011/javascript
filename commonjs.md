@@ -95,6 +95,7 @@ require方法有一个main属性，可以用来判断模块是直接执行，还
 
 直接执行的时候（node module.js），require.main属性指向模块本身。
 
+    // 可以在module.js文件中做一些判断
     require.main === module
     // true
     
