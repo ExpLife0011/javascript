@@ -29,4 +29,5 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
+* 正则表达式
 
