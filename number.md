@@ -54,7 +54,35 @@ parseInt方法还可以接受第二个参数（2到36之间），表示被解析
 
 如果第一个参数为字符串，且以0x或0X开头，而第二个参数省略或为0，则parseInt自动将第二个参数设为16。
 
+ECMAScript 5不再允许parseInt将带有前缀0的数字，视为八进制数，而是要求忽略这个0。但是，为了保证兼容性，大部分浏览器并没有部署这一条规定。
+
+    parseInt(010, 8) // NaN
+    parseInt(10, 8) // 8
+    parseInt('010', 8) // 8
+
+对于那些会自动转为科学计数法的数字，parseInt会将科学计数法的表示方法视为字符串，因此导致一些奇怪的结果。
+
+    parseInt(1000000000000000000000.5, 10) // 1
+    // 等同于
+    parseInt('1e+21', 10) // 1
+    
+    parseInt(0.0000008, 10) // 8
+    // 等同于
+    parseInt('8e-7', 10) // 8
+
 ### parseFloat()
+
+    parseFloat(true)  // NaN
+    Number(true) // 1
+    
+    parseFloat(null) // NaN
+    Number(null) // 0
+    
+    parseFloat('') // NaN
+    Number('') // 0
+    
+    parseFloat('123.45#') // 123.45
+    Number('123.45#') // NaN
 
 ## Number对象的属性
 
