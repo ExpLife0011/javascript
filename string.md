@@ -74,3 +74,6 @@ JavaScript使用Unicode字符集，使用16位（即2个字节）的UTF-16格式
     new String(thing)
     
 在非构造器上下文中 (如：没有 new 操作符)，String 能被用来执行类型转换。
+
+## 字符串函数
+
