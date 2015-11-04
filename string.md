@@ -77,3 +77,48 @@ JavaScript使用Unicode字符集，使用16位（即2个字节）的UTF-16格式
 
 ## 字符串函数
 
+### String.fromCharCode()
+
+根据Unicode编码，生成一个字符串。
+
+    String.fromCharCode(104, 101, 108, 108, 111)
+    // "hello"
+    
+    String.fromCharCode(0x20BB7)
+    // "ஷ"
+    
+    String.fromCharCode(0xD842, 0xDFB7)
+    // "𐮷"
+
+### length属性
+
+返回字符串的长度。
+
+### charAt()
+
+返回一个字符串的给定位置的字符。
+
+### charCodeAt()
+
+返回给定位置字符的Unicode编码（十进制表示）。
+
+需要注意的是，charCodeAt方法返回的Unicode编码不大于65536（0xFFFF），也就是说，只返回两个字节。因此如果遇到Unicode大于65536的字符（根据UTF-16的编码规则，第一个字节在U+D800到U+DBFF之间），就必需连续使用两次charCodeAt，不仅读入charCodeAt(i)，还要读入charCodeAt(i+1)，将两个16字节放在一起，才能得到准确的字符。
+
+### concat()
+
+用于连接两个字符串。
+
+    var s1 = "abc";
+    var s2 = "def";
+    
+    s1.concat(s2) // "abcdef"
+    s1 // "abc"
+    
+可以接受多个字符串。
+
+    "a".concat("b","c")
+    // "abc"
+
+一般来说，字符串连接运算还是应该使用加号（+）运算符。
+
+### 
