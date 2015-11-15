@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* Part I
 * [教程](tutorial.md)
    * [介绍](introduction.md)
    * [词法文法](lexical_grammar.md)
@@ -30,5 +31,4 @@
    * [模块](commonjs.md)
    * [package.json](package.md)
    * [npm](npm.md)
-* Part I
 
